@@ -1,0 +1,7 @@
+pandas
+tensorboard
+datasets
+transformers[torch]
+sentencepiece
+#transformers==4.19.2
+#torch==1.11.0
