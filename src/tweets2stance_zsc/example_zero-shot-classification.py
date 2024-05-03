@@ -5,7 +5,7 @@ Il classificatore può essere anche applicato a batch di tweet, ma mi sembra che
 
 from transformers import pipeline
 import pandas as pd
-import conf as INST
+import src.tweets2stance_zsc.conf as INST
 
 # device = 0 -> stai dicendo che il modello lavorerà sulla GPU
 # https://huggingface.co/transformers/master/main_classes/pipelines.html#transformers.ZeroShotClassificationPipeline

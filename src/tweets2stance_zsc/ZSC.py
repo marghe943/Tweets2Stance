@@ -4,10 +4,9 @@ import argparse
 import sys
 import os
 import numpy as np
-import logging
 from utils import *
 import json
-import conf as INST
+import src.tweets2stance_zsc.conf as INST
 
 if not os.path.exists('./log/'):
     os.makedirs('./log/')

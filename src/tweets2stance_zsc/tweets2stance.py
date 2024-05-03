@@ -1,14 +1,13 @@
 import pandas as pd
 import sys
 import os
-from utils import *
-import conf as INST
+from src.tweets2stance_zsc.utils import *
+import src.tweets2stance_zsc.conf as INST
 
 if not os.path.exists('./log/'):
     os.makedirs('./log/')
 setup_logger('execution_log', './log/tweets2stance.log')
 logger = logging.getLogger('execution_log')
-
 
 def compute_final_label(elem, final_thresholds):
     if len(final_thresholds) == 4:

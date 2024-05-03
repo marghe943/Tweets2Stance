@@ -10,8 +10,6 @@ OPT_DATASET = 'D4'
 MODELS = {}
 ELECTIONS_LIST = ['GB19', 'CA19', 'AB19', 'AU19', 'SK20', 'BC20', 'CA21', 'NS21', 'NFL21']
 for el in ELECTIONS_LIST:
-    if el in ['IT19', 'GB19']:
-        continue
     MODELS[el] = ["facebook/bart-large-mnli", "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli", "digitalepidemiologylab/covid-twitter-bert-v2-mnli"]
 
 ALGORITHMS = ["algorithm_1", "algorithm_2", "algorithm_3", "algorithm_4_min_num_tweets_3", "algorithm_4_min_num_tweets_2"]

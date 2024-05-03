@@ -1,9 +1,8 @@
 import os
-import logging
 import time
 from google_trans_new.google_trans_new import google_translator
-from src.utils import *
-import src.conf as INST
+from src.tweets2stance_zsc.utils import *
+import src.tweets2stance_zsc.conf as INST
 
 if not os.path.exists('./log/'):
     os.makedirs('./log/')

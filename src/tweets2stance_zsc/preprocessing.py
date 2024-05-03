@@ -1,10 +1,7 @@
 import re
-import numpy as np
-import pandas as pd
 import os
-import logging
-from src.utils import *
-import src.conf as INST
+from src.tweets2stance_zsc.utils import *
+import src.tweets2stance_zsc.conf as INST
 
 if not os.path.exists('./log/'):
     os.makedirs('./log/')
